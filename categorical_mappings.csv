@@ -1,0 +1,26 @@
+Column,Code,Value
+Transaction_Type,0,ATM Withdrawal
+Transaction_Type,1,Bill Payment
+Transaction_Type,2,POS Payment
+Transaction_Type,3,Bank Transfer
+Transaction_Type,4,Online Purchase
+Device_Used,0,Tablet
+Device_Used,1,Mobile
+Device_Used,2,Desktop
+Device_Used,3,Unknown Device
+Device_Used,4,Unknown
+Location,0,San Francisco
+Location,1,New York
+Location,2,Chicago
+Location,3,Boston
+Location,4,Houston
+Location,5,Miami
+Location,6,Los Angeles
+Location,7,Seattle
+Location,8,Unknown
+Payment_Method,0,Debit Card
+Payment_Method,1,Credit Card
+Payment_Method,2,UPI
+Payment_Method,3,Net Banking
+Payment_Method,4,Invalid Method
+Payment_Method,5,Unknown
