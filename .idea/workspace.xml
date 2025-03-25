@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="341dc608-59d4-4543-a401-0148b71e2d6b" name="Changes" comment="Beta 0.0.1">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/project-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/project-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catboost_info/catboost_training.json" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/catboost_training.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catboost_info/learn/events.out.tfevents" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/learn/events.out.tfevents" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catboost_info/learn_error.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/learn_error.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catboost_info/time_left.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/time_left.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250318-230544/train/events.out.tfevents.1742335544.NeurotechAIW.858473.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250318-230544/validation/events.out.tfevents.1742335549.NeurotechAIW.858473.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250319-150606/train/events.out.tfevents.1742393166.NeurotechAIW.1323639.0.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250319-150606/validation/events.out.tfevents.1742393172.NeurotechAIW.1323639.1.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250319-151741/train/events.out.tfevents.1742393861.NeurotechAIW.1323639.2.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250319-151741/validation/events.out.tfevents.1742393866.NeurotechAIW.1323639.3.v2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/CatBoost_best_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/CatBoost_best_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Gradient Boosting_best_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/Gradient Boosting_best_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/HistGradientBoosting_best_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/HistGradientBoosting_best_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/SGD Classifier_best_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/SGD Classifier_best_model.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/project.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,9 +40,9 @@
     &quot;accountId&quot;: &quot;034bf29b-73d1-4006-98b0-35bb0ec9b4fe&quot;
   }
 }</component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2uUtFaY7YoWkXjwBVZKcttABkeB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -185,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742430954518</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Beta 0.0.1">
+      <option name="closed" value="true" />
+      <created>1742940379434</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1742940379434</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
