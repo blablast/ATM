@@ -165,3 +165,12 @@ FRAUD_THRESHOLD = {
 - Używaj różnych kombinacji parametrów
 - Zwracaj uwagę na czasy inferencji
 - Porównuj predykcje między modelami
+
+
+## Uruchomienie
+```bash
+  uvicorn server:app --reload
+```
+```bash
+  streamlit run app.py
+```

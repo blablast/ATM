@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="341dc608-59d4-4543-a401-0148b71e2d6b" name="Changes" comment="Beta 0.0.2" />
+    <list default="true" id="341dc608-59d4-4543-a401-0148b71e2d6b" name="Changes" comment="Beta 0.0.1">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled-checkpoint.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/project-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/project-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catboost_info/catboost_training.json" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/catboost_training.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catboost_info/learn/events.out.tfevents" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/learn/events.out.tfevents" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catboost_info/learn_error.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/learn_error.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catboost_info/time_left.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/catboost_info/time_left.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250318-230544/train/events.out.tfevents.1742335544.NeurotechAIW.858473.0.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250318-230544/validation/events.out.tfevents.1742335549.NeurotechAIW.858473.1.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250319-150606/train/events.out.tfevents.1742393166.NeurotechAIW.1323639.0.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250319-150606/validation/events.out.tfevents.1742393172.NeurotechAIW.1323639.1.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250319-151741/train/events.out.tfevents.1742393861.NeurotechAIW.1323639.2.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/Default_Neural_Network_20250319-151741/validation/events.out.tfevents.1742393866.NeurotechAIW.1323639.3.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/CatBoost_best_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/CatBoost_best_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Gradient Boosting_best_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/Gradient Boosting_best_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/HistGradientBoosting_best_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/HistGradientBoosting_best_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/SGD Classifier_best_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/models/SGD Classifier_best_model.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/project.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +56,7 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/blablast/ATM&quot;,
+    &quot;url&quot;: &quot;https://github.com/blablast/ATM.git&quot;,
     &quot;accountId&quot;: &quot;034bf29b-73d1-4006-98b0-35bb0ec9b4fe&quot;
   }
 }</component>
@@ -47,24 +69,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Python.create_csv.executor": "Run",
-    "Python.mapping_script.executor": "Run",
-    "Python.server.executor": "Run",
-    "Python.test.executor": "Run",
-    "Python.venv.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/home/blazek/Documents/PyProjects/Projektowanie systemów bankowych",
-    "settings.editor.selected.configurable": "vcs.Git"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Python.create_csv.executor&quot;: &quot;Run&quot;,
+    &quot;Python.mapping_script.executor&quot;: &quot;Run&quot;,
+    &quot;Python.server.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test.executor&quot;: &quot;Run&quot;,
+    &quot;Python.venv.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/blazek/Documents/PyProjects/Projektowanie systemów bankowych&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": []
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: []
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="venv" type="PythonConfigurationType" factoryName="Python">
       <module name="Projektowanie systemów bankowych" />
@@ -146,7 +169,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742430184692</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Beta 0.0.1">
+      <option name="closed" value="true" />
+      <created>1742430908552</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1742430908552</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Beta 0.0.1">
+      <option name="closed" value="true" />
+      <created>1742430954518</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1742430954518</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,8 +200,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Beta 0.0.1" />
     <MESSAGE value="Beta 0.0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beta 0.0.2" />
+    <MESSAGE value="Beta 0.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beta 0.0.1" />
   </component>
 </project>
