@@ -134,7 +134,7 @@ def manual_test_mode(selected_models):
 def simulation_mode(selected_models):
     """Minimalist simulation mode."""
     st.subheader(f"🔄 {random_transaction_device()}{generate_session_id()} Live ")
-    delay = st.slider("Delay (ms)", 50, 1000, (50,150), 50)
+    delay = st.slider("Delay (ms)", 50, 1000, (50,50), 50)
     placeholder = st.empty()
 
     while True:
@@ -170,7 +170,7 @@ def main():
     selected_models = st.sidebar.multiselect(
         "Choose models for inference:",
         AVAILABLE_MODELS,
-        default=["Neural Network", "Gradient Boosting", "HistGradientBoosting"]
+        default=["Gradient Boosting", "HistGradientBoosting"] #"Neural Network",
     )
 
     mode = st.sidebar.radio("Select Mode:", ["Simulation", "Manual"])

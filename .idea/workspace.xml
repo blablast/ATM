@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="341dc608-59d4-4543-a401-0148b71e2d6b" name="Changes" comment="Beta 0.0.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Default_Neural_Network_best_model.keras" beforeDir="false" afterPath="$PROJECT_DIR$/models/Default_Neural_Network_best_model.keras" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/project.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,9 +43,9 @@
     &quot;accountId&quot;: &quot;034bf29b-73d1-4006-98b0-35bb0ec9b4fe&quot;
   }
 }</component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2uUtFaY7YoWkXjwBVZKcttABkeB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
