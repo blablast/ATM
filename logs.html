@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Logs</title>
+  <style>
+    body {
+      font-family: monospace;
+      background: #1e1e1e;
+      color: #ccc;
+      margin: 0;
+      padding: 20px;
+    }
+    #controls {
+      margin-bottom: 10px;
+    }
+    button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      background: #444;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #666;
+    }
+
+    #logBox {
+      white-space: pre-wrap;
+      background: #000;
+      padding: 15px;
+      border-radius: 10px;
+      height: 80vh;
+      overflow-y: auto;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .log-line {
+      padding: 2px 8px;
+      border-radius: 5px;
+      margin-bottom: 2px;
+    }
+    .log-line.info     { color: #00ff00; }
+    .log-line.warning  { color: #ffcc00; }
+    .log-line.error    { color: #ff5555; }
+    .log-line.fraud    { background-color: red;   color: white; }
+    .log-line.ok       { background-color: green; color: white; }
+    .log-line.other    { color: #aaa; }
+  </style>
+</head>
+<body>
+
+  <h1 style="color: #fff;">🔍 Live Logs</h1>
+
+  <div id="controls">
+    <button id="togglePause">⏸️ Pauza</button>
+  </div>
+
+  <div id="logBox"></div>
+
+  <script>
+    const logBox = document.getElementById('logBox');
+    const toggleBtn = document.getElementById('togglePause');
+
+    let paused = false;
+    let backlog = [];
+
+    const socket = new WebSocket("ws://192.168.5.60:8000/ws");
+
+    toggleBtn.onclick = () => {
+      paused = !paused;
+      toggleBtn.textContent = paused ? "▶️ Wznów" : "⏸️ Pauza";
+
+      if (!paused) {
+        flushBacklog();
+      }
+    };
+
+    function flushBacklog() {
+      backlog.forEach(log => addLogLine(log));
+      backlog = [];
+      logBox.scrollTop = logBox.scrollHeight;
+    }
+
+    function addLogLine(log) {
+      const line = document.createElement('div');
+      line.textContent = log;
+      line.className = "log-line";
+
+      if (log.includes("STATUS=FRAUD")) {
+        line.classList.add("fraud");
+      } else if (log.includes("STATUS=OK")) {
+        line.classList.add("ok");
+      } else if (log.includes("ERROR")) {
+        line.classList.add("error");
+      } else if (log.includes("WARNING")) {
+        line.classList.add("warning");
+      } else if (log.includes("INFO")) {
+        line.classList.add("info");
+      } else {
+        line.classList.add("other");
+      }
+
+      logBox.appendChild(line);
+    }
+
+    socket.onmessage = function(event) {
+      const lines = event.data.split('\n');
+      lines.forEach(log => {
+        if (paused) {
+          backlog.push(log);
+        } else {
+          addLogLine(log);
+          logBox.scrollTop = logBox.scrollHeight;
+        }
+      });
+    };
+  </script>
+</body>
+</html>

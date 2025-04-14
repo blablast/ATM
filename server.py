@@ -1,3 +1,4 @@
+import asyncio
 import os
 import time
 import pickle
@@ -5,9 +6,11 @@ import logging
 import pandas as pd
 import numpy as np
 import tensorflow as tf
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, WebSocket
 from contextlib import asynccontextmanager
 from typing import Dict, Any
+from queue import Queue
+from logging.handlers import QueueHandler
 
 # Import models from external file
 from models import Transaction, PredictionRequest, AVAILABLE_MODELS
@@ -20,7 +23,23 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
-logger = logging.getLogger(__name__)
+logger = logging.getLogger()  # root logger
+logger.setLevel(logging.INFO)
+
+# Configure logging to send messages to a queue
+uvicorn_logger = logging.getLogger("uvicorn")
+uvicorn_logger.setLevel(logging.INFO)
+
+# Create a queue for logging
+log_queue = Queue()
+
+# Create a queue handler
+queue_handler = QueueHandler(log_queue)
+
+logger.addHandler(queue_handler)
+
+# Add the queue handler to the logger
+uvicorn_logger.addHandler(queue_handler)
 
 # ANSI escape codes for colored output
 RED_BG = '\033[41m'  # Red background for fraud
@@ -149,11 +168,42 @@ async def predict_transaction(request: PredictionRequest) -> Dict[str, Any]:
     log_parts = []
     for name, pred in predictions.items():
         prob = pred["probability"]
-        color = (RED_BG) if prob >= 0.5 else GREEN_BG
-        log_parts.append(f"{color}{name}: {prob:.3f}{RESET}")
+        #color = RED_BG if prob >= 0.5 else GREEN_BG
+        #log_parts.append(f"{color}{name}: {prob:.3f}{RESET}")
+        status = "FRAUD" if prob >= 0.5 else "OK"
+        log_parts.append(f"{name}: {prob:.3f} | STATUS={status}")
     log_message = ", ".join(log_parts)
 
     # Log the result
     logger.info(log_message)
     
     return predictions
+
+# ======================================
+# WebSocket streaming logs
+# ======================================
+from starlette.websockets import WebSocketDisconnect
+
+@app.websocket("/ws")
+async def websocket_logs(websocket: WebSocket):
+    """WebSocket endpoint for streaming all logs in batch."""
+    await websocket.accept()
+    log_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+    try:
+        while True:
+            logs_to_send = []
+
+            while not log_queue.empty():
+                log_record = log_queue.get()
+                formatted_log = log_formatter.format(log_record)
+                logs_to_send.append(formatted_log)
+
+            if logs_to_send:
+                await websocket.send_text("\n".join(logs_to_send))
+
+            await asyncio.sleep(0.1)
+    except WebSocketDisconnect:
+        logger.info("WebSocket client disconnected.")
+    except Exception as e:
+        logger.error(f"Unexpected WebSocket error: {str(e)}")

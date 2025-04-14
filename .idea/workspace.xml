@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="341dc608-59d4-4543-a401-0148b71e2d6b" name="Changes" comment="Beta 0.0.1">
+    <list default="true" id="341dc608-59d4-4543-a401-0148b71e2d6b" name="Changes" comment="Final 1.0">
+      <change afterPath="$PROJECT_DIR$/logs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Default_Neural_Network_best_model.keras" beforeDir="false" afterPath="$PROJECT_DIR$/models/Default_Neural_Network_best_model.keras" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/project.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -55,6 +56,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;Python.create_csv.executor&quot;: &quot;Run&quot;,
     &quot;Python.mapping_script.executor&quot;: &quot;Run&quot;,
     &quot;Python.server.executor&quot;: &quot;Run&quot;,
@@ -176,7 +178,23 @@
       <option name="project" value="LOCAL" />
       <updated>1742940379434</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Final 1.0">
+      <option name="closed" value="true" />
+      <created>1744319403131</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1744319403131</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Final 1.0">
+      <option name="closed" value="true" />
+      <created>1744572628078</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1744572628078</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +211,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Beta 0.0.2" />
     <MESSAGE value="Beta 0.0.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beta 0.0.1" />
+    <MESSAGE value="Final 1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final 1.0" />
   </component>
 </project>
